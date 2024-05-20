@@ -6,7 +6,7 @@ import functions
 functions.limpar_terminal()
 
 HOST = ''              # Endereco IP do Servidor e o endereco atual do computador
-PORT = 50000            # Porta que o Servidor na maquina
+PORT = 5000            # Porta que o Servidor na maquina
 # Cria o socket do servidor
 tcp = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 orig = (HOST, PORT) # Forma a tupla de host, porta
@@ -29,7 +29,7 @@ dicionarioDeDados = {
     "status":False
     }
 
-def senData(dicionario):
+def sendData(dicionario):
     data_bytes = pickle.dumps(dicionario)
     conexao.sendall(data_bytes)
 
@@ -85,7 +85,7 @@ while True:
             dicionarioDeDados['mensagem']= "Digite 'iniciar' para iniciar um novo jogo"
             dicionarioDeDados['error']= True
             dicionarioDeDados['status']= True
-            senData(dicionarioDeDados) # ENVIA PARA O CLIENTE OS DADOS
+            sendData(dicionarioDeDados) # ENVIA PARA O CLIENTE OS DADOS
 
 
         # VERIFICA SE HÁ UMA RESPOSTA GERADA
@@ -131,9 +131,9 @@ while True:
                 dicionarioDeDados['error']= False
                 dicionarioDeDados['status']= True
 
-            senData(dicionarioDeDados) # ENVIA PARA O CLIENTE OS DADOS
+            sendData(dicionarioDeDados) # ENVIA PARA O CLIENTE OS DADOS
         else:
-            senData(dicionarioDeDados)
+            sendData(dicionarioDeDados)
 
 #---------------- fim do protocolo --------------
 
