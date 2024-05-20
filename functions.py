@@ -2,8 +2,7 @@ import random
 import os
 
 def limpar_terminal():
-    print('======== <<< ''\033[1;104m'' JOGO DA FORCA ''\033[0;0m'' >>> ========')
-    return os.system('clear')
+    return os.system('cls' if os.name == 'nt' else 'clear')
 
 def gerarNumeroAleatorio(lista):
     return random.randint(1, len(lista))
