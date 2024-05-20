@@ -11,6 +11,25 @@ Jogo da Forca Com Socket Escrito Em Python
 
 2 - Faça o clone do projeto e execute o servidor e depois o cliente, para que possa ver o resultado
 
+## ☑️ Principais conceitos Python aplicados
+
+✅ Importação de Módulos <br/>
+✅ Funções<br/>
+✅ Sockets<br/>
+✅ Serialização<br/>
+✅ Estruturas de Dados, com Dicionário e Lista<br/>
+✅ Controle de Fluxo<br/>
+✅ Laços de Repetições<br/>
+✅ Formatação de Strings<br/>
+✅ Manipulação de Strings<br/>
+✅ Manipulação de Tuplas<br/>
+✅ Manipulação de Listas<br/>
+✅ Entrada e Saída<br/>
+✅ Manipulação de Cores no Terminal<br/>
+✅ Leitura de Arquivo<br/>
+✅ Geração de Números Aleatórios<br/>
+✅ Interação com o Sistema Operacional<br/>
+
 ##
 
 
