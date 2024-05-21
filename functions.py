@@ -11,7 +11,7 @@ def criar_barra():
     return print('-' * 10)
 
 def db_ler():
-    with open('db.txt', "r") as f:
+    with open('db.txt', "r", encoding='utf-8') as f:
         linhas = f.readlines()
     return linhas
 
